@@ -36,3 +36,7 @@ A8, SELECT Name, Population
     LIMIT 1;    
 A9, SELECT COUNT(name)
     FROM country;
+A10, SELECT name, SurfaceArea
+    FROM country
+    ORDER BY SurfaceArea DESC
+    LIMIT 10;
