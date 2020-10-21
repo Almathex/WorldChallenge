@@ -1,3 +1,4 @@
 Q1, Using COUNT, get the number of cities in the USA.
-
-A1, 
+A1, SELECT COUNT(ID)
+    FROM city
+    WHERE CountryCode = 'USA';
