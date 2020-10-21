@@ -2,3 +2,8 @@ Q1, Using COUNT, get the number of cities in the USA.
 A1, SELECT COUNT(ID)
     FROM city
     WHERE CountryCode = 'USA';
+Q2, Find out the population and life expectancy for people in Argentina.
+A2, SELECT population, LifeExpectancy
+    FROM country
+    WHERE name = 'Argentina';
+
