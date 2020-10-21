@@ -16,3 +16,8 @@ A3, SELECT country.name, city.name
     FROM city
     INNER JOIN country ON city.countrycode = country.code
     WHERE city.id = country.capital AND country.name = 'spain';
+A4, SELECT country.region, countrylanguage.language
+    FROM country
+    INNER JOIN countrylanguage ON country.code = countrylanguage.countrycode
+    WHERE country.region = 'Southeast Asia'
+    GROUP BY countrylanguage.language;
