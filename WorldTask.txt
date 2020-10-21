@@ -1,0 +1,3 @@
+Q1, Using COUNT, get the number of cities in the USA.
+
+A1, 
