@@ -6,4 +6,9 @@ Q2, Find out the population and life expectancy for people in Argentina.
 A2, SELECT population, LifeExpectancy
     FROM country
     WHERE name = 'Argentina';
-
+Q3, Using IS NOT NULL, ORDER BY, and LIMIT, which country has the highest life expectancy?
+A3, SELECT name, LifeExpectancy
+    FROM country
+    WHERE LifeExpectancy IS NOT NULL
+    ORDER BY LifeExpectancy DESC
+    LIMIT 1;    
