@@ -34,3 +34,5 @@ A8, SELECT Name, Population
     WHERE Population > 0
     ORDER BY Population ASC
     LIMIT 1;    
+A9, SELECT COUNT(name)
+    FROM country;
