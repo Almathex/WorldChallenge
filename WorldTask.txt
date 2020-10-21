@@ -1,12 +1,9 @@
-Q1, Using COUNT, get the number of cities in the USA.
 A1, SELECT COUNT(ID)
     FROM city
     WHERE CountryCode = 'USA';
-Q2, Find out the population and life expectancy for people in Argentina.
 A2, SELECT population, LifeExpectancy
     FROM country
     WHERE name = 'Argentina';
-Q3, Using IS NOT NULL, ORDER BY, and LIMIT, which country has the highest life expectancy?
 A3, SELECT name, LifeExpectancy
     FROM country
     WHERE LifeExpectancy IS NOT NULL
@@ -84,5 +81,5 @@ A19,SELECT GoverNmentform, COUNT(Governmentform) AS TimesUsed
     ORDER BY TimesUsed DESC
     LIMIT 3;
 A20, SELECT COUNT(IndepYear)
-FROM country
-WHERE IndepYear IS NOT NULL AND IndepYear !=0;   
+    FROM country
+    WHERE IndepYear IS NOT NULL AND IndepYear !=0;   
