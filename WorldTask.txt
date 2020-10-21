@@ -46,10 +46,15 @@ A11, SELECT city.name, city.population
     Where country.code = 'JPN'
     ORDER BY city.population DESC
     LIMIT 5;
-A12, 
-UPDATE country
-SET Headofstate = 'Elizabeth II'
-WHERE Headofstate = 'Elisabeth II';
-SELECT name, headofstate
-FROM country
-WHERE headofstate = 'Elizabeth II'    
+A12,UPDATE country
+    SET Headofstate = 'Elizabeth II'
+    WHERE Headofstate = 'Elisabeth II';
+    SELECT name, headofstate
+    FROM country
+    WHERE headofstate = 'Elizabeth II' 
+A13,SELECT name,(Population/SurfaceArea) 
+    FROM country
+    WHERE Population IS NOT NULL and Population >0
+    ORDER BY (Population/SurfaceArea) ASC
+    LIMIT 5;
+
