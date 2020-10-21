@@ -29,3 +29,8 @@ A7, SELECT COUNT(city.name)
     FROM city
     INNER JOIN country ON country.code = city.countrycode
     WHERE country.name = 'china';
+A8, SELECT Name, Population
+    FROM country
+    WHERE Population > 0
+    ORDER BY Population ASC
+    LIMIT 1;    
