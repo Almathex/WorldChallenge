@@ -57,4 +57,5 @@ A13,SELECT name,(Population/SurfaceArea)
     WHERE Population IS NOT NULL and Population >0
     ORDER BY (Population/SurfaceArea) ASC
     LIMIT 5;
-
+A14,SELECT DISTINCT(Language)
+    FROM countrylanguage;
