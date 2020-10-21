@@ -40,3 +40,9 @@ A10, SELECT name, SurfaceArea
     FROM country
     ORDER BY SurfaceArea DESC
     LIMIT 10;
+A11, SELECT city.name, city.population
+    FROM city
+    INNER JOIN country ON city.countrycode = country.code
+    Where country.code = 'JPN'
+    ORDER BY city.population DESC
+    LIMIT 5;    
