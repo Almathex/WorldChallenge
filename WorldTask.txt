@@ -68,4 +68,13 @@ A16,SELECT country.name, COUNT(countrylanguage.language) AS languageSpoken
     INNER JOIN country ON countrylanguage.countrycode = country.code
     GROUP BY country.name
     ORDER BY languageSpoken DESC
-    LIMIT 5;    
+    LIMIT 10;
+A17,SELECT country.name
+    FROM country
+    INNER JOIN countrylanguage ON country.code = countrylanguage.countrycode
+    WHERE countrylanguage.language = 'German' AND countrylanguage.percentage > 50; 
+A18,SELECT name, lifeExpectancy 
+    FROM country
+    WHERE LifeExpectancy IS NOT NULL AND LifeExpectancy != 0
+    ORDER BY lifeExpectancy ASC
+    LIMIT 1;    
