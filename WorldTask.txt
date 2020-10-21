@@ -11,4 +11,8 @@ A3, SELECT name, LifeExpectancy
     FROM country
     WHERE LifeExpectancy IS NOT NULL
     ORDER BY LifeExpectancy DESC
-    LIMIT 1;    
+    LIMIT 1;
+A3, SELECT country.name, city.name
+    FROM city
+    INNER JOIN country ON city.countrycode = country.code
+    WHERE city.id = country.capital AND country.name = 'spain';
