@@ -25,4 +25,7 @@ A6, SELECT name
     FROM city 
     WHERE city.name LIKE 'F%'
     LIMIT 25;
-A7, 
+A7, SELECT COUNT(city.name)
+    FROM city
+    INNER JOIN country ON country.code = city.countrycode
+    WHERE country.name = 'china';
