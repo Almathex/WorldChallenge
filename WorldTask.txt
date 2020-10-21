@@ -77,4 +77,12 @@ A18,SELECT name, lifeExpectancy
     FROM country
     WHERE LifeExpectancy IS NOT NULL AND LifeExpectancy != 0
     ORDER BY lifeExpectancy ASC
-    LIMIT 1;    
+    LIMIT 1; 
+A19,SELECT GoverNmentform, COUNT(Governmentform) AS TimesUsed
+    FROM country
+    GROUP BY Governmentform
+    ORDER BY TimesUsed DESC
+    LIMIT 3;
+A20, SELECT COUNT(IndepYear)
+     FROM country
+     WHERE IndepYear IS NOT NULL AND IndepYear !=0;   
