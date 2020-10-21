@@ -84,5 +84,5 @@ A19,SELECT GoverNmentform, COUNT(Governmentform) AS TimesUsed
     ORDER BY TimesUsed DESC
     LIMIT 3;
 A20, SELECT COUNT(IndepYear)
-     FROM country
-     WHERE IndepYear IS NOT NULL AND IndepYear !=0;   
+FROM country
+WHERE IndepYear IS NOT NULL AND IndepYear !=0;   
